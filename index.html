@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ben X Capital - Live Ticker</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .header {
+      padding: 20px;
+    }
+    .logo {
+      max-width: 220px;
+    }
+    .slogan {
+      font-size: 20px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+    .highlight {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    .ticker {
+      margin-top: 30px;
+    }
+    .qr-section {
+      margin-top: 30px;
+    }
+    .qr-section img {
+      width: 120px;
+      height: 120px;
+    }
+    .qr-section p {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Ben X Capital Logo" class="logo">
+    <div class="slogan">Smart Capital, Real Growth</div>
+    <div class="highlight">Helping investors earn 10–12% monthly ROI</div>
+    <div class="highlight">Referral Program – Earn 4% Commission Monthly</div>
+    <div class="highlight">Global Presence: 🇦🇪 🇺🇸 🇫🇷 🇹🇷 🇵🇭 🇿🇦</div>
+  </div>
+
+  <div class="ticker">
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js">
+    {
+      "symbols": [
+        { "proName": "FOREXCOM:XAUUSD", "title": "Gold" },
+        { "proName": "BITSTAMP:BTCUSD", "title": "Bitcoin" },
+        { "proName": "FX:EURUSD", "title": "EUR/USD" },
+        { "proName": "FX:USDJPY", "title": "USD/JPY" },
+        { "proName": "NASDAQ:AAPL", "title": "Apple" },
+        { "proName": "NASDAQ:TSLA", "title": "Tesla" },
+        { "proName": "NASDAQ:NVDA", "title": "Nvidia" },
+        { "proName": "NASDAQ:AMZN", "title": "Amazon" },
+        { "proName": "NASDAQ:MSFT", "title": "Microsoft" },
+        { "proName": "NASDAQ:GOOGL", "title": "Google" },
+        { "proName": "NASDAQ:META", "title": "Meta" },
+        { "proName": "NYSE:BRK.B", "title": "Berkshire Hathaway" }
+      ],
+      "theme": "dark",
+      "isTransparent": false,
+      "displayMode": "adaptive",
+      "locale": "en"
+    }
+    </script>
+  </div>
+
+  <div class="qr-section">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://benxinvest.com&size=120x120" alt="QR Code">
+    <p>Scan to Learn More</p>
+  </div>
+</body>
+</html>
